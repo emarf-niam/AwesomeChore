@@ -1,6 +1,7 @@
 const { Client, Intents } = (Discord = require('discord.js'));
 const client = new Client({ intents: Intents.ALL });
 global.Embed = Discord.MessageEmbed;
+global.Collection = Discord.Collection;
 
 client.on('message', message => {
     const { prefix, commands } = require('./config.json');
